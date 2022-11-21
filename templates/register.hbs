@@ -1,0 +1,103 @@
+    <!doctype html>
+    <html lang="en">
+
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+                integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+            <title>registration</title>
+        </head>
+
+        <body>
+            <!--This form contains data to be filled referenced from bootstrap website-->
+                <form action="/register" method="post"> <!--The form will contain post method with action at register.hbs file-->
+                <div class="form-group row"> <!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputname3" class="col-sm-2 col-form-label">First Name</label><!--Label for First Name-->
+                    <div class="col-sm-10"> 
+                    <input type="text" class="form-control" id="inputname3" name="firstName"><!--Input to add FirstName in Database-->
+                    </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputlastname3" class="col-sm-2 col-form-label">Last Name</label><!--Label for Last Name-->
+                    <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputlastname3" name="lastName"><!--Input to add LastName in Database-->
+                    </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label><!--Label for Email-->
+                    <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" name="email"><!--Input to add Email in Database-->
+                    </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputphonenumber3" class="col-sm-2 col-form-label">Phone</label><!--Label for Phone-->
+                    <div class="col-sm-10">
+                    <input type="text" minlength="10" maxlength="10"  class="form-control" id="inputphonenumber3" name="phone"><!--Input to add Phone with Min and Max Length 10 in Database-->
+                    </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label><!--Label for Password-->
+                    <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" name="password"><!--Input to add Password in Database-->
+                    </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label class="col-sm-2 col-form-label">Gender</label><!--Label for Gender-->
+                <div class="form-check"> <!--Indication to form for checked button added-->
+                <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male" checked><!--radio type button default checked for gender-->
+                <label class="form-check-label" for="exampleRadios1"> <!--Label for Male-->
+                    Male
+                </label>
+                </div>
+                <div class="form-check"><!--Indication to form for checked button added-->
+                <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female"><!--radio type button default checked for gender-->
+                <label class="form-check-label" for="exampleRadios2"><!--Label for Female-->
+                    Female
+                </label>
+                </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="Age" class="col-sm-2 col-form-label" name="Agee">Age</label><!--Label for Age-->
+                    <div class="col-sm-10">
+                    <input type="text" name="age" placeholder="Enter Your Age *" id="Age"><!--Input to add Age in Database-->
+                    </div>
+                </div>
+                <div class="form-group row"><!--form-group row class align the element in row
+                and using it everytime it will align every item in new row-->
+                    <label for="ConfirmPassword" class="col-sm-2 col-form-label" name="passwordconfirm">Confirm Password</label><!--Label for COnfirm Password-->
+                    <div class="col-sm-10">
+                    <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password *" id="ConfirmPassword"/ ><!--Input tag for confirm password-->
+                    </div>
+                </div>
+                <input type="submit" value="Register" class="btnRegister"   /><!--Register button to store database-->
+                </form>
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+                crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+            -->
+        </body>
+        </html>
